@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+</head>
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto text-center">
+                <!--Primera parte-->
+                <div class="card">
+                    <div class="card-body">
+                        <h1 id="clima-location" class="h3"></h1>
+                        <h3 id="clima-descripcion" class="h4"></h3>
+                        <h3 id="clima-string"></h3>
+                        <ul class="list-group mt-3">
+                            <li id="clima-humedad" class="list-group-item">
+
+                            </li>
+
+                            <li id="clima-viento" class="list-group-item">
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Segunda parte-->
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formulario">
+                            <div class="form-group">
+                                <input type="text" id="ciudad" placeholder="City" class="form-control" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="codigoCiudad" placeholder="Country Code" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-dark btn-block" id="cambiar-btn">
+                                    Get Results
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
